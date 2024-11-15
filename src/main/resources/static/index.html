@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Chat App</title>
+    <link rel="stylesheet" href="/css/chat.css"> <!-- CSS 경로 -->
+    <!-- SockJS와 Stomp 라이브러리 추가 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</head>
+<body>
+<div id="chat-container">
+    <h1>채팅</h1>
+    <div id="message-area"></div>
+    <input type="text" id="username" placeholder="이름 입력">
+    <input type="text" id="message" placeholder="메시지 입력">
+    <button onclick="sendMessage()">전송</button>
+</div>
+<script src="/js/chat.js"></script> <!-- JavaScript 경로 -->
+</body>
+</html>
